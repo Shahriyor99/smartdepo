@@ -59,31 +59,19 @@ class _HomePageState extends State<HomePage> {
         ),
       ),
 
-      body: ListView(
-          padding: EdgeInsets.symmetric(vertical: 5),
-          children: [
-            ElevatedButton(
-              onPressed: (){},
-              child: CardWidget("assets/icons/icon_lab.png", "Labaratoriya"),
-            ),
-            ElevatedButton(
-              onPressed: (){},
-              child: CardWidget("assets/icons/ic_sozlama.png", "Анализ ремонта"),
-            ),
-            ElevatedButton(
-              onPressed: (){},
-              child: CardWidget("assets/icons/ic_jurnal.png", "Расшифрофка"),
-            ),
-            ElevatedButton(
-              onPressed: (){},
-              child: CardWidget("assets/icons/ic_kitob.png", "E-NOTES"),
-            ),
-            ElevatedButton(
-              onPressed: (){},
-              child: CardWidget("assets/icons/ic_map.png", "Map"),
-            ),
-          ],
-        ),
+      body: SingleChildScrollView(
+        scrollDirection: Axis.vertical,
+        padding: EdgeInsets.symmetric(vertical: 5),
+        child: Column(
+            children: [
+              CardWidget("assets/icons/icon_lab.png", "Labaratoriya"),
+              CardWidget("assets/icons/ic_sozlama.png", "Анализ ремонта"),
+              CardWidget("assets/icons/ic_jurnal.png", "Расшифрофка"),
+              CardWidget("assets/icons/ic_kitob.png", "E-NOTES"),
+              CardWidget("assets/icons/ic_map.jpg", "Map"),
+            ],
+          ),
+      ),
     );
   }
 }

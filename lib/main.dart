@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Smart DEpo',
+      title: 'Smart Depo',
       // theme: ThemeData(
       //   primarySwatch: Colors.white,
       // ),
